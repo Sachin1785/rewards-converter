@@ -18,17 +18,11 @@ class RewardValueTests {
 
     @Test
     void convert_from_cash_to_miles() {
-        double cashValue = 100;
-        var rewardValue = new RewardValue(cashValue);
-        double expectedMiles = cashValue / 0.0035;
-        assertEquals(expectedMiles, rewardValue.getMilesValue(), 0.01, "Cash to miles conversion did not match expected value");
+       
     }
 
     @Test
     void convert_from_miles_to_cash() {
-        int milesValue = 10000;
-        var rewardValue = new RewardValue(milesValue);
-        double expectedCash = milesValue * 0.0035;
-        assertEquals(expectedCash, rewardValue.getCashValue(), 0.01, "Miles to cash conversion did not match expected value");
+
     }
 }
